@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+    background-image: url('./assets/backp.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+    /* box-shadow: 0px 0px 10px 0px purple; */
+    color: white;
+    font-size: 3.125rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* background-color: black; */
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    font-size: 3.125rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Merienda', cursive;
+    height: 20vh;
+}
+.about{
+    display: block;
+    width: 40vw;
+    text-shadow: 0px 0px 10px black;
+}
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+
+.nums{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    gap: 8vw;
+}
+
+.common{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    font-size: 4vw;
+}
+
+.comps1, .comps2, .comps3{
+    display: flex;
+}
+
+
+
+.plant {
+    position: relative;
+    padding: 13px 35px;
+    background: #f5ddb7;
+    font-size: 17px;
+    font-weight: 900;
+    color: #181818;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #18181869, inset 2px 2px 10px #ffffffb0;
+    transition: all .3s ease-in-out;
+  }
+  
+  .icon-1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0px;
+    height: auto;
+    transition: all .5s ease-in-out;
+    z-index: -1;
+  }
+  
+  .icon-2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0px;
+    height: auto;
+    transition: all .5s ease-in-out;
+    z-index: -2;
+  }
+  
+  .icon-3 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0px;
+    height: auto;
+    transition: all .5s ease-in-out;
+    z-index: -2;
+  }
+  
+  .icon-4 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0px;
+    height: auto;
+    transition: all .5s ease-in-out;
+    z-index: -2;
+  }
+  
+  .icon-5 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0px;
+    height: auto;
+    transition: all .5s ease-in-out;
+    z-index: -2;
+  }
+  
+  button:hover {
+    padding: 13px 25px;
+    border-radius: 8px 8px 24px 24px;
+  }
+  
+  button:hover .icon-1 {
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50px;
+    height: auto;
+    animation: inIcon1 1s ease .45s forwards;
+  }
+  
+  @keyframes inIcon1 {
+    0% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  
+    25% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(5deg);
+    }
+  
+    50% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(1deg);
+    }
+  
+    65% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(3deg);
+    }
+  
+    100% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  }
+  
+  button:hover .icon-2 {
+    position: absolute;
+    top: -150%;
+    left: 100%;
+    transform: translate(-50%, 0);
+    width: 75px;
+    height: auto;
+    animation: inIcon2 1s ease .45s forwards;
+  }
+  
+  @keyframes inIcon2 {
+    0% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  
+    35% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(10deg);
+    }
+  
+    50% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(4deg);
+    }
+  
+    80% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(5deg);
+    }
+  
+    100% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  }
+  
+  button:hover .icon-3 {
+    position: absolute;
+    top: -130%;
+    left: 20%;
+    transform: translate(-50%, 0);
+    width: 60px;
+    height: auto;
+    animation: inIcon3 1s ease .45s forwards;
+  }
+  
+  @keyframes inIcon3 {
+    0% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  
+    35% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(-2deg);
+    }
+  
+    100% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  }
+  
+  button:hover .icon-4 {
+    position: absolute;
+    top: -300%;
+    left: 10%;
+    transform: translate(-50%, 0);
+    width: 85px;
+    height: auto;
+    animation: inIcon4 1s ease .45s forwards;
+  }
+  
+  @keyframes inIcon4 {
+    0% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  
+    40% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(-3deg);
+    }
+  
+    100% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  }
+  
+  button:hover .icon-5 {
+    position: absolute;
+    top: -250%;
+    left: 90%;
+    transform: translate(-50%, 0);
+    width: 85px;
+    height: auto;
+    animation: inIcon5 1s ease .45s forwards;
+  }
+  
+  @keyframes inIcon5 {
+    0% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  
+    35% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(-3deg);
+    }
+  
+    100% {
+      transform-origin: 0 100%;
+      transform: translate(-50%, 0) rotate(0deg);
+    }
+  }
+  
+  .fil-leaf-1 {
+    fill: #7B9B3A
+  }
+  
+  .fil-leaf-2 {
+    fill: #556729;
+    fill-rule: nonzero
+  }
+  
+  .fil-leaf-3 {
+    fill: #556729
+  }
+  
+  .fil-leaf-4 {
+    fill: #3C4819
+  }
+  
+  .fil-leaf-5 {
+    fill: #3C4819
+  }
+
+  .btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+  }
+  
+  .btn-donate img{
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    height: 5rem;
+    width: 10rem;
+    transform:scale(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .btn-donate:hover img{
+    top: 93%;
+    transform: scale(1.2);
+  }
+
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+  
+  .slide{
+    /* transform: translateX(50vw); */
+    opacity: 1;
+    animation: slide 1s ease-in-out 1 both;
+  }
+@keyframes slide{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
